@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Front end bootcamp w6e3</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		.center-block {
+			float: none;
+			margin: 0 auto;
+		}
+
+		.panel-default {
+			margin-top: 20px;
+		}
+
+		.time {
+			color: #bbb;
+		}
+
+		.name {
+			font-weight: bold;
+		}
+
+		.status {
+			color: #bbb;
+		}
+
+		.border {
+			border-bottom: 1px dashed #ccc;
+			padding: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">	
+		<h1 class="text-center">CHAT</h1>
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="chat">
+					<div class="row">
+						<div class="col-sm-4 center-block">
+							<div id="join-chat">
+								<div class="form-group">
+									<label for="name">Podaj ksywkę:</label>
+									<input type="text" class="form-control" id="name" placeholder="Podaj ksywke">
+								</div>
+
+								<button type="submit" id="btn-join" class="btn btn-primary">Dołącz</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-sm-8 center-block">
+							<div id="window-chat">
+								<!-- <div class="panel panel-default">
+									<div class="panel-body"> -->
+										<!-- <div class="row border">
+											<div class="col-sm-12">
+												<span class="time">20:35:21</span>
+												<span class="status">Krystian dołączył do czatu</span>
+											</div>
+										</div>
+										
+										<div class="row border">
+											<div class="col-sm-12">
+												<span class="time">20:35:21</span>
+												<span class="name">Krystian</span>
+												<span class="message">Cześć co tam?</span>
+											</div>
+										</div> -->
+									<!-- </div>
+								</div> -->
+							</div>
+
+							<div class="form-group">
+								<textarea class="form-control" rows="5" id="message"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-primary" id="btn-submit" disabled>Wyślij</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
